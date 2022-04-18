@@ -1,0 +1,27 @@
+.dark-mode .custom-control-label::before, .dark-mode .custom-file-label, .dark-mode .custom-file-label::after, .dark-mode .custom-select, .dark-mode .form-control, .dark-mode .input-group-text {
+    background-color: #ffffff !important;
+    color: #353333;
+}
+
+.dark-mode .card {
+    background-color: #555555;
+    color: #fff;
+}
+
+.card-header {
+    background-color: #ee4c00;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    padding: 0.75rem 1.25rem;
+    position: relative;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.centro{
+    text-align: center;
+}
+
+.texto-grande{
+
+    text-transform: uppercase;
+}

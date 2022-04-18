@@ -60,9 +60,9 @@ foreach ($listar as $item) {
    $resultados .= '<tr>
    
                      <td>' . $item->id . '</td>
-                     <td>' . $item->nome . '</td>
-                     <td>' . $item->telefone . '</td>
-                     <td>' . $item->email . '</td>
+                     <td class="texto-grande">' . $item->nome . '</td>
+                     <td class="texto-grande">' . $item->telefone . '</td>
+                     <td class="texto-grande">' . $item->email . '</td>
                     
                       <td class="centro">
                       

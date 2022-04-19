@@ -212,6 +212,29 @@ $usuario = $usuariologado ?
             <p>Clientes</p>
           </a>
         </li>
+        <li class="<?php
+
+                    switch ($acesso) {
+                      case '2':
+                        echo "nav-item d-none d-sm-inline-block";
+                        break;
+                      case '3':
+                        echo "";
+                        break;
+                      case '4':
+                        echo "";
+                        break;
+
+                      default:
+                        echo "nav-item d-none d-sm-inline-block";
+                        break;
+                    }
+
+                    ?>" style="display: none;">
+          <a href="../../pages/produtos/produto-list.php" class="nav-link">
+            <p>Produtos</p>
+          </a>
+        </li>
 
 
       </ul>

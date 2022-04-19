@@ -1,3 +1,5 @@
+
+
 <?php
 
 use App\Entidy\Clientes;
@@ -54,13 +56,13 @@ $dados .= '<div class="row">
             <div class="col-2">
             <div class="form-group">
                   <label>CEP</label>
-                  <input type="text" class="form-control" name="cep" id="cep22" onkeyup="Cep()" value="'.$cep.'">
+                  <input type="text" class="form-control" name="cep" id="cep2" onkeyup="Cep2()" value="'.$cep.'">
                </div>
             </div>
             <div class="col-6">
             <div class="form-group">
                   <label>Logradouro</label>
-                  <input type="text" class="form-control" name="logradouro" id="logradouro1" value="'.$logradouro.'">
+                  <input type="text" class="form-control" name="logradouro" id="logradouro" value="'.$logradouro.'">
                </div>
             </div>
             <div class="col-4">

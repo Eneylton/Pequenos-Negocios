@@ -1,7 +1,6 @@
 <?php
 require __DIR__ . '../../../vendor/autoload.php';
 
-use App\Db\Pagination;
 use App\Entidy\Clientes;
 use App\Session\Login;
 use App\Webservice\ViaCEP;
@@ -68,6 +67,30 @@ include __DIR__ . '../../../includes/layout/footer.php';
                 success: function(resposta) {
 
                     $("#logradouro1").val(resposta.logradouro);
+                    $("#bairro1").val(resposta.bairro);
+                    $("#cidade1").val(resposta.localidade);
+                    $("#uf1").val(resposta.uf);
+                    $("#numero1").focus();
+                }
+
+            })
+
+        });
+    }
+</script>
+
+<script>
+    async function Cep2() {
+
+        $("#cep2").on("change", function() {
+
+            var idCEP = $("#cep2").val();
+            $.ajax({
+                url: 'https://viacep.com.br/ws/' + idCEP + '/json',
+                dataType: 'json',
+                success: function(resposta) {
+
+                    $("#logradouro").val(resposta.logradouro);
                     $("#bairro1").val(resposta.bairro);
                     $("#cidade1").val(resposta.localidade);
                     $("#uf1").val(resposta.uf);

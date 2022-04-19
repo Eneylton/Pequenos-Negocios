@@ -4,7 +4,7 @@
   <strong>Copyright &copy; <?php echo date('Y') ?> <a href="https://adminlte.io">Eneylton Barros</a>.</strong>
   eneylton@hotmail.com.
   <div class="float-right d-none d-sm-inline-block">
-    <b>Versão </b> 2021
+    <b>Versão </b> <?php echo date('Y') ?>
   </div>
 </footer>
 
@@ -16,6 +16,7 @@
     confirm_password = document.getElementById("confirm_password");
 
   function validatePassword() {
+    
     if (password.value != confirm_password.value) {
       confirm_password.setCustomValidity("Senhas diferentes!");
     } else {

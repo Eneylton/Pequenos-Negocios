@@ -67,7 +67,7 @@ class Usuario
     }
 
 
-    public static function getUsuariosID($id)
+    public static function getID($id)
     {
         return (new Database('usuarios'))->select('id = ' . $id)
             ->fetchObject(self::class);

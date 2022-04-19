@@ -21,6 +21,14 @@
     text-align: center;
 }
 
+.esquerda{
+    text-align: left;
+}
+
+.direita{
+    text-align: right;
+}
+
 .texto-grande{
 
     text-transform: uppercase;
